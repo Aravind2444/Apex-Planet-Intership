@@ -194,4 +194,27 @@ input, textarea {
     background: none;
 }
 
+@media (max-width: 600px) {
+    button {
+        background-color: #8a77d0; /* Slightly lighter color */
+    }
+
+    h1{
+        font-size: 22px; /* Slightly smaller heading */
+    }
+
+    ul li {
+        padding: 10px 8px; /* Slightly reduce padding */
+    }
+
+    button {
+        font-size: 14px; /* Slightly smaller font size */
+    }
+
+    .container {
+        background-color: #8c5cba; /* Slightly different shade */
+    }
+    
+}
+
 
