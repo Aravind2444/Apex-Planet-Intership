@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Enfield Bikes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Royal Enfield Bikes</h1>
+    <p>Find your perfect Royal Enfield bike</p>
+</header>
+
+<div class="filters">
+    <div>
+        <label for="category">Category</label>
+        <select id="category">
+            <option value="all">All</option>
+            <option value="Cruiser">Cruiser</option>
+            <option value="Touring">Touring</option>
+            <option value="Naked">Naked</option>
+            <option value="Adventure">Adventure</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="price">Price Range</label>
+        <select id="price">
+            <option value="all">All</option>
+            <option value="0-500000">₹0 - ₹500,000</option>
+            <option value="500000+">₹500,000+</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="sort-price">Sort by Price</label>
+        <select id="sort-price">
+            <option value="low-to-high">Low to High</option>
+            <option value="high-to-low">High to Low</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="sort-rating">Sort by Rating</label>
+        <select id="sort-rating">
+            <option value="high-to-low">High to Low</option>
+            <option value="low-to-high">Low to High</option>
+        </select>
+    </div>
+</div>
+
+<div class="products-container">
+    <!-- Product Cards will be inserted here dynamically -->
+    <div class="product-card" data-category="Cruiser" data-price="200000" data-rating="4.2">
+        <img src="./images/classic 350.jpg" alt="Royal Enfield Classic 350">
+        <h2>Royal Enfield Classic 350</h2>
+        <p>Cruiser</p>
+        <p class="price">₹200,000</p>
+        <p class="rating">Rating: 4.2</p>
+    </div>
+    <div class="product-card" data-category="Cruiser" data-price="220000" data-rating="4.3">
+        <img src="./images/meteor350.jpg" alt="Royal Enfield Meteor 350">
+        <h2>Royal Enfield Meteor 350</h2>
+        <p>Cruiser</p>
+        <p class="price">₹220,000</p>
+        <p class="rating">Rating: 4.3</p>
+    </div>
+    <div class="product-card" data-category="Touring" data-price="250000" data-rating="4.5">
+        <img src="./images/himalayan.jpeg" alt="Royal Enfield Himalayan">
+        <h2>Royal Enfield Himalayan</h2>
+        <p>Touring</p>
+        <p class="price">₹250,000</p>
+        <p class="rating">Rating: 4.5</p>
+    </div>
+    <div class="product-card" data-category="Naked" data-price="350000" data-rating="4.6">
+        <img src="./images/intercepter 650.jpeg" alt="Royal Enfield Interceptor 650">
+        <h2>Royal Enfield Interceptor 650</h2>
+        <p>Naked</p>
+        <p class="price">₹350,000</p>
+        <p class="rating">Rating: 4.6</p>
+    </div>
+    <div class="product-card" data-category="Naked" data-price="380000" data-rating="4.7">
+        <img src="./images/gt 650.jpeg" alt="Royal Enfield Continental GT 650">
+        <h2>Royal Enfield Continental GT 650</h2>
+        <p>Naked</p>
+        <p class="price">₹380,000</p>
+        <p class="rating">Rating: 4.7</p>
+    </div>
+    <div class="product-card" data-category="Cruiser" data-price="240000" data-rating="4.4">
+        <img src="./images/meteor 650.jpeg" alt="Royal Enfield Meteor 650">
+        <h2>Royal Enfield Meteor 650</h2>
+        <p>Cruiser</p>
+        <p class="price">₹240,000</p>
+        <p class="rating">Rating: 4.4</p>
+    </div>
+    <div class="product-card" data-category="Adventure" data-price="420000" data-rating="4.8">
+        <img src="./images/guerilla 450.jpeg" alt="Royal Enfield Guerilla 450">
+        <h2>Royal Enfield Guerilla 450</h2>
+        <p>Adventure</p>
+        <p class="price">₹420,000</p>
+        <p class="rating">Rating: 4.8</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
